@@ -1,7 +1,7 @@
 ﻿import argparse
 import json
-import re
 from dataclasses import dataclass
+#python replay_parser.py "Gen9VGC2026RegFBo3-2026-02-07-jagsamurott-spurrific.html" -o parsed_output.json
 
 
 @dataclass
@@ -78,8 +78,6 @@ def parse_replay_log(log_text: str) -> dict:
     p1_tera: str | None = None
     p2_tera: str | None = None
     winner: int | None = None
-    best_of_3_id: str | None = None
-    best_of_3_game_number: int | None = None
     nickname_to_species = {"p1": {}, "p2": {}}
 
     for line in log_text.splitlines():
@@ -101,23 +99,6 @@ def parse_replay_log(log_text: str) -> dict:
                 p1_username = username
             elif slot == "p2":
                 p2_username = username
-
-        elif event == "uhtml" and len(parts) >= 4:
-            block_id = parts[2].strip()
-            if block_id != "bestof":
-                continue
-
-            html = "|".join(parts[3:])
-            game_match = re.search(r"Game\s+(\d+)", html)
-            if game_match:
-                best_of_3_game_number = int(game_match.group(1))
-
-            id_match = re.search(
-                r'href="\\?/game-bestof3-([^"]*?-\d+)(?:-[^"/]+)?"',
-                html,
-            )
-            if id_match:
-                best_of_3_id = id_match.group(1)
 
         elif event == "showteam" and len(parts) >= 4:
             slot = parts[2].strip()
@@ -187,8 +168,6 @@ def parse_replay_log(log_text: str) -> dict:
                 winner = 2
 
     return {
-        "best_of_3_id": best_of_3_id,
-        "best_of_3_game_number": best_of_3_game_number,
         "player1": {
             "username": p1_username,
             "team": p1_team,
@@ -213,25 +192,13 @@ def main() -> None:
         "logfile",
         help="Path to a .log text file containing the replay protocol.",
     )
-    parser.add_argument(
-        "-o",
-        "--output",
-        help="Path to write parsed JSON output.",
-    )
     args = parser.parse_args()
 
     with open(args.logfile, encoding="utf-8") as f:
         log_text = f.read()
 
     result = parse_replay_log(log_text)
-    output_json = json.dumps(result, indent=2)
-
-    if args.output:
-        with open(args.output, "w", encoding="utf-8") as f:
-            f.write(output_json + "\n")
-        print(f"Wrote parsed replay JSON to {args.output}")
-    else:
-        print(output_json)
+    print(json.dumps(result, indent=2))
 
 
 if __name__ == "__main__":
