@@ -74,8 +74,10 @@ def parse_replay_log(log_text: str) -> dict:
     p2_username = None
     p1_team = []
     p2_team = []
-    p1_revealed: set[str] = set()
-    p2_revealed: set[str] = set()
+    p1_leads: list[str] = []
+    p2_leads: list[str] = []
+    p1_back: list[str] = []
+    p2_back: list[str] = []
     p1_tera: str | None = None
     p2_tera: str | None = None
     winner: int | None = None
@@ -138,20 +140,15 @@ def parse_replay_log(log_text: str) -> dict:
             if nickname and player in nickname_to_species:
                 nickname_to_species[player][nickname] = species
             if player == "p1":
-                p1_revealed.add(species)
+                if species not in p1_leads and len(p1_leads) < 2:
+                    p1_leads.append(species)
+                elif species not in p1_leads and species not in p1_back:
+                    p1_back.append(species)
             elif player == "p2":
-                p2_revealed.add(species)
-
-        elif event == "move" and len(parts) >= 3:
-            slot = parts[2].strip()
-            player = _extract_player(slot)
-            nickname = slot.split(":", 1)[1].strip() if ":" in slot else None
-            species = nickname_to_species.get(player, {}).get(nickname or "")
-            if species:
-                if player == "p1":
-                    p1_revealed.add(species)
-                elif player == "p2":
-                    p2_revealed.add(species)
+                if species not in p2_leads and len(p2_leads) < 2:
+                    p2_leads.append(species)
+                elif species not in p2_leads and species not in p2_back:
+                    p2_back.append(species)
 
         elif event == "detailschange" and len(parts) >= 4:
             slot = parts[2].strip()
@@ -161,10 +158,6 @@ def parse_replay_log(log_text: str) -> dict:
             nickname = _extract_nickname(slot)
             if nickname and player in nickname_to_species:
                 nickname_to_species[player][nickname] = species
-            if player == "p1":
-                p1_revealed.add(species)
-            elif player == "p2":
-                p2_revealed.add(species)
 
         elif event == "-terastallize" and len(parts) >= 3:
             slot = parts[2].strip()
@@ -173,12 +166,8 @@ def parse_replay_log(log_text: str) -> dict:
             species = nickname_to_species.get(player, {}).get(nickname or "", nickname)
             if player == "p1":
                 p1_tera = species
-                if species:
-                    p1_revealed.add(species)
             elif player == "p2":
                 p2_tera = species
-                if species:
-                    p2_revealed.add(species)
 
         elif event == "win" and len(parts) >= 3:
             winner_name = parts[2].strip()
@@ -193,13 +182,15 @@ def parse_replay_log(log_text: str) -> dict:
         "player1": {
             "username": p1_username,
             "team": p1_team,
-            "revealed_pokemon": sorted(p1_revealed),
+            "lead_pokemon": p1_leads,
+            "back_pokemon": p1_back,
             "terastalized_pokemon": p1_tera,
         },
         "player2": {
             "username": p2_username,
             "team": p2_team,
-            "revealed_pokemon": sorted(p2_revealed),
+            "lead_pokemon": p2_leads,
+            "back_pokemon": p2_back,
             "terastalized_pokemon": p2_tera,
         },
         "winning_player": winner,
@@ -214,13 +205,24 @@ def main() -> None:
         "logfile",
         help="Path to a .log text file containing the replay protocol.",
     )
+    parser.add_argument(
+        "-o",
+        "--output",
+        help="Path to write parsed JSON output.",
+    )
     args = parser.parse_args()
 
     with open(args.logfile, encoding="utf-8") as f:
         log_text = f.read()
 
     result = parse_replay_log(log_text)
-    print(json.dumps(result, indent=2))
+    output_json = json.dumps(result, indent=2)
+    if args.output:
+        with open(args.output, "w", encoding="utf-8") as f:
+            f.write(output_json + "\n")
+        print(f"Wrote parsed replay JSON to {args.output}")
+    else:
+        print(output_json)
 
 
 if __name__ == "__main__":
