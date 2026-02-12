@@ -1,0 +1,262 @@
+﻿|j|☆JagSamurott
+|j|☆Spurrific
+|html|<table width="100%"><tr><td align="left">JagSamurott</td><td align="right">Spurrific</tr><tr><td align="left"><i class="fa fa-circle"></i> <i class="fa fa-circle-o"></i> </td><td align="right"><i class="fa fa-circle-o"></i> <i class="fa fa-circle"></i> </tr></table>
+|uhtml|bestof|<h2><strong>Game 3</strong> of <a href="/game-bestof3-gen9vgc2026regfbo3-2535090111-eauyr2qkh5mbnmhoy7cpusbjuw9p9k3pw">a best-of-3</a></h2>
+|t:|1770513050
+|gametype|doubles
+|player|p1|JagSamurott|hero2-conquest|
+|player|p2|Spurrific|#scl2dynamos|
+|gen|9
+|tier|[Gen 9] VGC 2026 Reg F (Bo3)
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Dragonite, L50, M|
+|poke|p1|Dondozo, L50, M|
+|poke|p1|Tatsugiri-Droopy, L50, F|
+|poke|p1|Chien-Pao, L50|
+|poke|p1|Ogerpon-Hearthflame, L50, F|
+|poke|p1|Flutter Mane, L50|
+|poke|p2|Incineroar, L50, M|
+|poke|p2|Landorus, L50, M|
+|poke|p2|Ogerpon-Wellspring, L50, F|
+|poke|p2|Flutter Mane, L50|
+|poke|p2|Heatran, L50, F|
+|poke|p2|Amoonguss, L50, F|
+|teampreview|4
+|showteam|p1|Dragonite||ChoiceBand|InnerFocus|ExtremeSpeed,Outrage,StompingTantrum,AerialAce|||M|||50|,,,,,Normal]Dondozo||Leftovers|Unaware|WaveCrash,OrderUp,Protect,BodyPress|||M|||50|,,,,,Grass]Tatsugiri-Droopy||SafetyGoggles|Commander|MuddyWater,DracoMeteor,Protect,HelpingHand|||F|||50|,,,,,Steel]Chien-Pao||FocusSash|SwordofRuin|IceSpinner,SuckerPunch,Protect,SacredSword||||||50|,,,,,Ghost]Ogerpon-Hearthflame||HearthflameMask|MoldBreaker|IvyCudgel,WoodHammer,SpikyShield,FollowMe|||F|||50|,,,,,Fire]Flutter Mane||BoosterEnergy|Protosynthesis|Moonblast,IcyWind,Protect,ShadowBall||||||50|,,,,,Fairy
+|showteam|p2|Incineroar||SitrusBerry|Intimidate|FakeOut,FlareBlitz,PartingShot,KnockOff|||M|||50|,,,,,Ghost]Landorus||LifeOrb|SheerForce|EarthPower,SludgeBomb,Substitute,Protect|||M|||50|,,,,,Poison]Ogerpon-Wellspring||WellspringMask|WaterAbsorb|IvyCudgel,HornLeech,FollowMe,SpikyShield|||F|||50|,,,,,Water]Flutter Mane||ChoiceSpecs|Protosynthesis|Moonblast,DazzlingGleam,ShadowBall,PowerGem||||||50|,,,,,Fairy]Heatran||Leftovers|FlashFire|MagmaStorm,EarthPower,FlashCannon,Protect|||F|||50|,,,,,Bug]Amoonguss||RockyHelmet|Regenerator|Spore,RagePowder,SludgeBomb,Protect|||F|||50|,,,,,Dark
+|j| aquawarrior21
+|j| Saw725
+|j| stx_uspl_zzy
+|j| ZekromZeke
+|
+|t:|1770513136
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Ogerpon|Ogerpon-Hearthflame, L50, F|100/100
+|switch|p1b: Dragonite|Dragonite, L50, M|100/100
+|switch|p2a: Ogerpon|Ogerpon-Wellspring, L50, F|100/100
+|switch|p2b: Flutter Mane|Flutter Mane, L50|100/100
+|-ability|p1a: Ogerpon|Mold Breaker
+|turn|1
+|
+|t:|1770513161
+|switch|p1b: Donbozo|Dondozo, L50, M|100/100
+|move|p2b: Flutter Mane|Moonblast|p1b: Donbozo
+|-damage|p1b: Donbozo|36/100
+|move|p2a: Ogerpon|Ivy Cudgel|p1b: Donbozo|[anim] Ivy Cudgel Water
+|-resisted|p1b: Donbozo
+|-damage|p1b: Donbozo|21/100
+|move|p1a: Ogerpon|Wood Hammer|p2b: Flutter Mane
+|-damage|p2b: Flutter Mane|0 fnt
+|faint|p2b: Flutter Mane
+|-end|p2b: Flutter Mane|Protosynthesis|[silent]
+|-damage|p1a: Ogerpon|76/100|[from] Recoil
+|
+|-heal|p1b: Donbozo|27/100|[from] item: Leftovers
+|upkeep
+|
+|t:|1770513167
+|switch|p2b: Heatran|Heatran, L50, F|100/100
+|turn|2
+|
+|t:|1770513202
+|switch|p1a: Tatsusgiri|Tatsugiri-Droopy, L50, F|100/100
+|-activate|p1a: Tatsusgiri|ability: Commander|[of] p1b: Donbozo
+|-boost|p1b: Donbozo|atk|2
+|-boost|p1b: Donbozo|spa|2
+|-boost|p1b: Donbozo|spe|2
+|-boost|p1b: Donbozo|def|2
+|-boost|p1b: Donbozo|spd|2
+|move|p2a: Ogerpon|Ivy Cudgel|p1a: Tatsusgiri|[anim] Ivy Cudgel Water|[miss]
+|-miss|p2a: Ogerpon|p1a: Tatsusgiri
+|move|p1b: Donbozo|Body Press|p2b: Heatran
+|-supereffective|p2b: Heatran
+|-damage|p2b: Heatran|14/100
+|move|p2b: Heatran|Earth Power|p1b: Donbozo
+|-damage|p1b: Donbozo|12/100
+|
+|-heal|p1b: Donbozo|18/100|[from] item: Leftovers
+|-heal|p2b: Heatran|20/100|[from] item: Leftovers
+|upkeep
+|turn|3
+|
+|t:|1770513219
+|move|p1b: Donbozo|Protect|p1b: Donbozo
+|-singleturn|p1b: Donbozo|Protect
+|move|p2a: Ogerpon|Follow Me|p2a: Ogerpon
+|-singleturn|p2a: Ogerpon|move: Follow Me
+|move|p2b: Heatran|Magma Storm|p1b: Donbozo
+|-activate|p1b: Donbozo|move: Protect
+|
+|-heal|p1b: Donbozo|24/100|[from] item: Leftovers
+|-heal|p2b: Heatran|26/100|[from] item: Leftovers
+|upkeep
+|turn|4
+|
+|t:|1770513227
+|move|p2b: Heatran|Protect|p2b: Heatran
+|-singleturn|p2b: Heatran|Protect
+|move|p2a: Ogerpon|Horn Leech|p1b: Donbozo
+|-supereffective|p1b: Donbozo
+|-damage|p1b: Donbozo|3/100
+|move|p1b: Donbozo|Body Press|p2b: Heatran
+|-activate|p2b: Heatran|move: Protect
+|
+|-heal|p1b: Donbozo|10/100|[from] item: Leftovers
+|-heal|p2b: Heatran|32/100|[from] item: Leftovers
+|upkeep
+|turn|5
+|
+|t:|1770513245
+|switch|p2b: Incineroar|Incineroar, L50, M|100/100
+|-ability|p2b: Incineroar|Intimidate|boost
+|-unboost|p1a: Tatsusgiri|atk|1
+|-unboost|p1b: Donbozo|atk|1
+|move|p1b: Donbozo|Protect|p1b: Donbozo
+|-singleturn|p1b: Donbozo|Protect
+|move|p2a: Ogerpon|Horn Leech|p1b: Donbozo
+|-activate|p1b: Donbozo|move: Protect
+|
+|-heal|p1b: Donbozo|16/100|[from] item: Leftovers
+|upkeep
+|turn|6
+|
+|t:|1770513254
+|move|p2b: Incineroar|Fake Out|p1b: Donbozo
+|-damage|p1b: Donbozo|13/100
+|move|p2a: Ogerpon|Horn Leech|p1b: Donbozo
+|-supereffective|p1b: Donbozo
+|-damage|p1b: Donbozo|0 fnt
+|faint|p1b: Donbozo
+|
+|upkeep
+|
+|t:|1770513260
+|switch|p1b: Dragonite|Dragonite, L50, M|100/100
+|turn|7
+|
+|t:|1770513285
+|-terastallize|p2a: Ogerpon|Water
+|detailschange|p2a: Ogerpon|Ogerpon-Wellspring-Tera, L50, F, tera:Water
+|-ability|p2a: Ogerpon|Embody Aspect (Wellspring)|boost
+|-boost|p2a: Ogerpon|spd|1
+|move|p2a: Ogerpon|Ivy Cudgel|p1b: Dragonite|[anim] Ivy Cudgel Water
+|-resisted|p1b: Dragonite
+|-damage|p1b: Dragonite|62/100
+|move|p1a: Tatsusgiri|Muddy Water|p2a: Ogerpon|[spread] p2a,p2b
+|-resisted|p2a: Ogerpon
+|-supereffective|p2b: Incineroar
+|-damage|p2a: Ogerpon|88/100
+|-damage|p2b: Incineroar|34/100
+|-enditem|p2b: Incineroar|Sitrus Berry|[eat]
+|-heal|p2b: Incineroar|59/100|[from] item: Sitrus Berry
+|move|p1b: Dragonite|Aerial Ace|p2a: Ogerpon
+|-damage|p2a: Ogerpon|33/100
+|move|p2b: Incineroar|Knock Off|p1b: Dragonite
+|-damage|p1b: Dragonite|22/100
+|-enditem|p1b: Dragonite|Choice Band|[from] move: Knock Off|[of] p2b: Incineroar
+|
+|upkeep
+|turn|8
+|j| LegnaK
+|
+|t:|1770513315
+|switch|p2b: Heatran|Heatran, L50, F|32/100
+|-terastallize|p1b: Dragonite|Normal
+|move|p2a: Ogerpon|Spiky Shield|p2a: Ogerpon
+|-singleturn|p2a: Ogerpon|move: Protect
+|move|p1b: Dragonite|Extreme Speed|p2a: Ogerpon
+|-activate|p2a: Ogerpon|move: Protect
+|-damage|p1b: Dragonite|10/100|[from] Spiky Shield|[of] p2a: Ogerpon
+|move|p1a: Tatsusgiri|Muddy Water|p2a: Ogerpon|[spread] p2b
+|-activate|p2a: Ogerpon|move: Protect
+|-supereffective|p2b: Heatran
+|-damage|p2b: Heatran|0 fnt
+|faint|p2b: Heatran
+|
+|upkeep
+|
+|t:|1770513317
+|switch|p2b: Incineroar|Incineroar, L50, M|59/100
+|-ability|p2b: Incineroar|Intimidate|boost
+|-unboost|p1a: Tatsusgiri|atk|1
+|-fail|p1b: Dragonite|unboost|Attack|[from] ability: Inner Focus|[of] p1b: Dragonite
+|turn|9
+|
+|t:|1770513328
+|move|p2b: Incineroar|Fake Out|p1b: Dragonite
+|-damage|p1b: Dragonite|0 fnt
+|faint|p1b: Dragonite
+|move|p2a: Ogerpon|Horn Leech|p1a: Tatsusgiri
+|-crit|p1a: Tatsusgiri
+|-damage|p1a: Tatsusgiri|5/100
+|-heal|p2a: Ogerpon|75/100|[from] drain|[of] p1a: Tatsusgiri
+|move|p1a: Tatsusgiri|Muddy Water|p2a: Ogerpon|[spread] p2a,p2b
+|-resisted|p2a: Ogerpon
+|-supereffective|p2b: Incineroar
+|-damage|p2a: Ogerpon|64/100
+|-damage|p2b: Incineroar|0 fnt
+|faint|p2b: Incineroar
+|
+|upkeep
+|
+|t:|1770513330
+|switch|p1b: Ogerpon|Ogerpon-Hearthflame, L50, F|76/100
+|-ability|p1b: Ogerpon|Mold Breaker
+|turn|10
+|
+|t:|1770513342
+|move|p2a: Ogerpon|Spiky Shield|p2a: Ogerpon
+|-singleturn|p2a: Ogerpon|move: Protect
+|move|p1b: Ogerpon|Wood Hammer|p2a: Ogerpon
+|-activate|p2a: Ogerpon|move: Protect
+|-damage|p1b: Ogerpon|64/100|[from] Spiky Shield|[of] p2a: Ogerpon
+|move|p1a: Tatsusgiri|Draco Meteor|p2a: Ogerpon
+|-activate|p2a: Ogerpon|move: Protect
+|
+|upkeep
+|turn|11
+|
+|t:|1770513369
+|move|p1b: Ogerpon|Spiky Shield|p1b: Ogerpon
+|-singleturn|p1b: Ogerpon|move: Protect
+|move|p2a: Ogerpon|Ivy Cudgel|p1b: Ogerpon|[anim] Ivy Cudgel Water
+|-activate|p1b: Ogerpon|move: Protect
+|move|p1a: Tatsusgiri|Draco Meteor|p2a: Ogerpon
+|-damage|p2a: Ogerpon|13/100
+|-unboost|p1a: Tatsusgiri|spa|2
+|
+|upkeep
+|turn|12
+|
+|t:|1770513379
+|move|p2a: Ogerpon|Ivy Cudgel|p1b: Ogerpon|[anim] Ivy Cudgel Water
+|-damage|p1b: Ogerpon|0 fnt
+|faint|p1b: Ogerpon
+|move|p1a: Tatsusgiri|Draco Meteor|p2a: Ogerpon|[miss]
+|-miss|p1a: Tatsusgiri|p2a: Ogerpon
+|
+|upkeep
+|turn|13
+|
+|t:|1770513385
+|move|p2a: Ogerpon|Horn Leech|p1a: Tatsusgiri
+|-damage|p1a: Tatsusgiri|0 fnt
+|-heal|p2a: Ogerpon|16/100|[from] drain|[of] p1a: Tatsusgiri
+|faint|p1a: Tatsusgiri
+|
+|win|Spurrific
+|l| stx_uspl_zzy
+|l| Saw725
+|l| ZekromZeke
+|l|☆JagSamurott
+|player|p1|
+|j|☆JagSamurott
+|player|p1|JagSamurott|hero2-conquest|
+|l|☆Spurrific
+|player|p2|
+|l| aquawarrior21
+

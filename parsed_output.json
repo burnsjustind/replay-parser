@@ -1,0 +1,171 @@
+{
+  "player1": {
+    "username": "JagSamurott",
+    "team": [
+      {
+        "name": "Dragonite",
+        "item": "ChoiceBand",
+        "ability": "InnerFocus",
+        "moves": [
+          "ExtremeSpeed",
+          "Outrage",
+          "StompingTantrum",
+          "AerialAce"
+        ],
+        "tera_type": "Normal"
+      },
+      {
+        "name": "Dondozo",
+        "item": "Leftovers",
+        "ability": "Unaware",
+        "moves": [
+          "WaveCrash",
+          "OrderUp",
+          "Protect",
+          "BodyPress"
+        ],
+        "tera_type": "Grass"
+      },
+      {
+        "name": "Tatsugiri-Droopy",
+        "item": "SafetyGoggles",
+        "ability": "Commander",
+        "moves": [
+          "MuddyWater",
+          "DracoMeteor",
+          "Protect",
+          "HelpingHand"
+        ],
+        "tera_type": "Steel"
+      },
+      {
+        "name": "Chien-Pao",
+        "item": "FocusSash",
+        "ability": "SwordofRuin",
+        "moves": [
+          "IceSpinner",
+          "SuckerPunch",
+          "Protect",
+          "SacredSword"
+        ],
+        "tera_type": "Ghost"
+      },
+      {
+        "name": "Ogerpon-Hearthflame",
+        "item": "HearthflameMask",
+        "ability": "MoldBreaker",
+        "moves": [
+          "IvyCudgel",
+          "WoodHammer",
+          "SpikyShield",
+          "FollowMe"
+        ],
+        "tera_type": "Fire"
+      },
+      {
+        "name": "Flutter Mane",
+        "item": "BoosterEnergy",
+        "ability": "Protosynthesis",
+        "moves": [
+          "Moonblast",
+          "IcyWind",
+          "Protect",
+          "ShadowBall"
+        ],
+        "tera_type": "Fairy"
+      }
+    ],
+    "revealed_pokemon": [
+      "Dondozo",
+      "Dragonite",
+      "Ogerpon-Hearthflame",
+      "Tatsugiri-Droopy"
+    ],
+    "terastalized_pokemon": "Dragonite"
+  },
+  "player2": {
+    "username": "Spurrific",
+    "team": [
+      {
+        "name": "Incineroar",
+        "item": "SitrusBerry",
+        "ability": "Intimidate",
+        "moves": [
+          "FakeOut",
+          "FlareBlitz",
+          "PartingShot",
+          "KnockOff"
+        ],
+        "tera_type": "Ghost"
+      },
+      {
+        "name": "Landorus",
+        "item": "LifeOrb",
+        "ability": "SheerForce",
+        "moves": [
+          "EarthPower",
+          "SludgeBomb",
+          "Substitute",
+          "Protect"
+        ],
+        "tera_type": "Poison"
+      },
+      {
+        "name": "Ogerpon-Wellspring",
+        "item": "WellspringMask",
+        "ability": "WaterAbsorb",
+        "moves": [
+          "IvyCudgel",
+          "HornLeech",
+          "FollowMe",
+          "SpikyShield"
+        ],
+        "tera_type": "Water"
+      },
+      {
+        "name": "Flutter Mane",
+        "item": "ChoiceSpecs",
+        "ability": "Protosynthesis",
+        "moves": [
+          "Moonblast",
+          "DazzlingGleam",
+          "ShadowBall",
+          "PowerGem"
+        ],
+        "tera_type": "Fairy"
+      },
+      {
+        "name": "Heatran",
+        "item": "Leftovers",
+        "ability": "FlashFire",
+        "moves": [
+          "MagmaStorm",
+          "EarthPower",
+          "FlashCannon",
+          "Protect"
+        ],
+        "tera_type": "Bug"
+      },
+      {
+        "name": "Amoonguss",
+        "item": "RockyHelmet",
+        "ability": "Regenerator",
+        "moves": [
+          "Spore",
+          "RagePowder",
+          "SludgeBomb",
+          "Protect"
+        ],
+        "tera_type": "Dark"
+      }
+    ],
+    "revealed_pokemon": [
+      "Flutter Mane",
+      "Heatran",
+      "Incineroar",
+      "Ogerpon-Wellspring"
+    ],
+    "terastalized_pokemon": "Ogerpon-Wellspring"
+  },
+  "winning_player": 2
+}
